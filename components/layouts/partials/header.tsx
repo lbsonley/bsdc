@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ theme } = defaultHeaderProps) => {
     'flex-nowrap': true,
     'items-center': true,
     'my-4': true,
-    'mx-8': true,
+    'mx-6': true,
     'text-xl': true,
     'text-slate-200': theme === HeaderThemes.light,
     'text-slate-900': theme === HeaderThemes.dark,

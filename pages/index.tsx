@@ -9,7 +9,7 @@ const Home: NextPage = () => {
       <>
         <DarkenedBackground />
         <div className="flex fixed inset-0 justify-center items-center">
-          <div className="flex flex-col max-w-80">
+          <main className="flex flex-col max-w-80">
             <p className="mb-4 text-4xl text-slate-200">
               Hi! I&apos;m Ben Sonley.
             </p>
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
               I&apos;m a full stack javascript developer with a focus on React,
               GraphQL, and Prisma ORM.
             </p>
-          </div>
+          </main>
         </div>
       </>
     </MainLayout>

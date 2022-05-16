@@ -13,11 +13,15 @@ module.exports = {
         'palms-medium': 'url(/images/palms-medium.jpg)',
         'palms-large': 'url(/images/palms-large.jpg)',
         'palms-huge': 'url(/images/palms-huge.jpg)',
+        'water-small': 'url(/images/water-small.jpg)',
+        'water-medium': 'url(/images/water-medium.jpg)',
+        'water-large': 'url(/images/water-large.jpg)',
+        'water-huge': 'url(/images/water-huge.jpg)',
       },
       maxWidth: {
         80: '80%',
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
