@@ -1,9 +1,13 @@
 import React from 'react';
+import { useSession } from 'next-auth/react';
 import Link from 'next/link';
 import classNames from 'classnames';
 import { Pyramid } from '../../icons';
+import LoginButton from '../../atoms/login-button';
 
 const Header: React.FC<HeaderProps> = ({ theme } = defaultHeaderProps) => {
+  const { data: session } = useSession();
+
   const headerClasses = classNames({
     flex: true,
     relative: true,
@@ -30,14 +34,23 @@ const Header: React.FC<HeaderProps> = ({ theme } = defaultHeaderProps) => {
       <nav className="flex flex-1 w-80">
         <ul className="flex flex-row flex-nowrap flex-1 justify-end w-full text-right">
           <li className="mx-4">
-            <Link href="/" passHref>
-              <a>Projects</a>
-            </Link>
+            <a
+              href="https://github.com/lbsonley"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
           </li>
+          {session ? (
+            <li className="mx-4">
+              <Link href="/resume" passHref>
+                <a>Resume</a>
+              </Link>
+            </li>
+          ) : null}
           <li className="mx-4">
-            <Link href="/resume" passHref>
-              <a>Resume</a>
-            </Link>
+            <LoginButton />
           </li>
         </ul>
       </nav>
