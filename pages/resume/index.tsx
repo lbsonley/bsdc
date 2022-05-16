@@ -1,11 +1,7 @@
 import React from 'react';
-import { useSession } from 'next-auth/react';
 import MainLayout from '../../components/layouts/main';
 
 const ResumePage = () => {
-  const { data: session } = useSession();
-
-  console.log({ session });
   return (
     <MainLayout>
       <main>

@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { Pyramid } from '../../icons';
 import LoginButton from '../../atoms/login-button';
 
-const Header: React.FC<HeaderProps> = ({ theme } = defaultHeaderProps) => {
+const Header: React.FC<HeaderProps> = ({ theme = HeaderThemes.dark }) => {
   const { data: session } = useSession();
 
   const headerClasses = classNames({
@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({ theme } = defaultHeaderProps) => {
       </div>
       <nav className="flex flex-1 w-80">
         <ul className="flex flex-row flex-nowrap flex-1 justify-end w-full text-right">
-          <li className="mx-4">
+          <li className="flex items-center mx-4">
             <a
               href="https://github.com/lbsonley"
               target="_blank"
@@ -43,14 +43,14 @@ const Header: React.FC<HeaderProps> = ({ theme } = defaultHeaderProps) => {
             </a>
           </li>
           {session ? (
-            <li className="mx-4">
+            <li className="flex items-center mx-4">
               <Link href="/resume" passHref>
                 <a>Resume</a>
               </Link>
             </li>
           ) : null}
           <li className="mx-4">
-            <LoginButton />
+            <LoginButton theme={theme} />
           </li>
         </ul>
       </nav>
@@ -65,10 +65,6 @@ export enum HeaderThemes {
 
 type HeaderProps = {
   theme?: HeaderThemes;
-};
-
-const defaultHeaderProps = {
-  theme: HeaderThemes.dark,
 };
 
 export default Header;

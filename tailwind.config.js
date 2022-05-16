@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -23,5 +26,23 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    plugin(function ({ addComponents, theme }) {
+      addComponents({
+        '.btn': {
+          padding: `${theme('spacing.2')} ${theme('spacing.3')}`,
+          borderRadius: theme('borderRadius.DEFAULT'),
+        },
+        '.btn-primary': {
+          color: theme('colors.slate.50'),
+          backgroundColor: theme('colors.sky.700'),
+        },
+        '.btn-primary-inverted': {
+          backgroundColor: theme('colors.slate.50'),
+          color: theme('colors.sky.700'),
+        },
+      });
+    }),
+  ],
 };
