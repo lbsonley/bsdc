@@ -1,5 +1,7 @@
 import React from 'react';
+import Image from 'next/image';
 import MainLayout from '../../components/layouts/main';
+import me from '../../public/images/me.jpg';
 
 const ResumePage = () => {
   return (
@@ -18,18 +20,16 @@ const ResumePage = () => {
           </p>
           <section>
             <h2 className="mt-16">Personal Information</h2>
-            <p className="mt-0">Ben Sonley</p>
-            <address>
-              <div className="md:columns-2">
-                <span className="w-full">
+            <div className="flex flex-col-reverse print:flex-row md:flex-row">
+              <div className="flex flex-col justify-center w-full print:w-1/2 md:w-1/2">
+                <p className="mt-0">Ben Sonley</p>
+                <address>
                   Ammerswilerstrasse 13
                   <br />
                   5600 Lenzburg
                   <br />
                   Switzerland
                   <br />
-                </span>
-                <span className="w-full">
                   <a className="font-normal" href="tel:+41762674281">
                     +41 76 267 42 81
                   </a>
@@ -37,9 +37,17 @@ const ResumePage = () => {
                   <a className="font-normal" href="mailto:lbsonley@gmail.com">
                     lbsonley@gmail.com
                   </a>
-                </span>
+                </address>
               </div>
-            </address>
+              <div className="relative mb-4 w-full print:w-1/2 md:mb-0 md:w-1/2">
+                <Image
+                  src={me}
+                  alt="headshot of Ben Sonley"
+                  objectFit="contain"
+                  height={500}
+                />
+              </div>
+            </div>
           </section>
           <section>
             <h2 className="mt-16">Work Experience</h2>
@@ -188,7 +196,7 @@ const ResumePage = () => {
             <ul>
               <li>Accessibility</li>
               <li>SEO</li>
-              <li>Performance</li>
+              <li>Performance (CLS, LCP)</li>
             </ul>
             <h3 className="mt-12">Build and CLI Tools</h3>
             <ul>

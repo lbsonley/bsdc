@@ -11,6 +11,7 @@ const Header: React.FC<HeaderProps> = ({ theme = HeaderThemes.dark }) => {
   const headerClasses = classNames({
     flex: true,
     relative: true,
+    'print:hidden': true,
     'z-40': true,
     'flex-row': true,
     'flex-nowrap': true,
