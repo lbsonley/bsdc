@@ -137,7 +137,7 @@ const ResumePage = () => {
             <h2 className="mt-16">Technical Skills</h2>
             <p>
               I have experience working with a variety of frameworks and
-              libraries. I am primarily a javascript developer, but I have also
+              libraries. I am primarily a Javascript developer, but I have also
               worked with Python. As with most developers I have my preferred
               toolset, which I have marked with asterisk (*) below.
             </p>
@@ -146,6 +146,9 @@ const ResumePage = () => {
               <li>ESNext*</li>
               <li>Typescript*</li>
               <li>Python</li>
+              <li>HTML5 (semantic)</li>
+              <li>CSS3</li>
+              <li>Sass</li>
             </ul>
             <h3 className="mt-12">Frontend Frameworks/Libraries</h3>
             <ul>
@@ -164,14 +167,12 @@ const ResumePage = () => {
               <li>Vuex</li>
               <li>NgRx</li>
             </ul>
-            <h3 className="mt-12">CSS</h3>
+            <h3 className="mt-12">Styling</h3>
             <ul>
               <li>TailwindCSS*</li>
               <li>StyledComponents*</li>
               <li>Polished*</li>
               <li>Emotion*</li>
-              <li>SCSS</li>
-              <li>CSS3</li>
             </ul>
             <h3 className="mt-12">Servers and Databases</h3>
             <ul>
@@ -182,6 +183,12 @@ const ResumePage = () => {
               <li>Postgresql*</li>
               <li>MySQL</li>
               <li>MongoDB</li>
+            </ul>
+            <h3 className="mt-12">Web Standards</h3>
+            <ul>
+              <li>Accessibility</li>
+              <li>SEO</li>
+              <li>Performance</li>
             </ul>
             <h3 className="mt-12">Build and CLI Tools</h3>
             <ul>
@@ -232,7 +239,7 @@ const ResumePage = () => {
             </ul>
             <h3>Characertistics</h3>
             <ul>
-              <li>Solution oriented</li>
+              <li>Solution-oriented</li>
               <li>Pragmatic</li>
               <li>Strong communicator</li>
               <li>High standards for quality</li>
