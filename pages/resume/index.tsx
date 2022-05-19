@@ -259,7 +259,7 @@ const ResumePage = () => {
             <h3>Language</h3>
             <ul>
               <li>English - native</li>
-              <li>German - advanced</li>
+              <li>German - fluent</li>
               <li>Spanish - intermediate</li>
               <li>French - beginner</li>
             </ul>
