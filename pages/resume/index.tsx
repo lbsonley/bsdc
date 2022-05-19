@@ -182,7 +182,7 @@ const ResumePage = () => {
               <li>Polished*</li>
               <li>Emotion*</li>
             </ul>
-            <h3 className="mt-12">Servers and Databases</h3>
+            <h3 className="mt-12">Servers, Databases, and Authentication</h3>
             <ul>
               <li>Express.js*</li>
               <li>Prisma ORM*</li>
@@ -191,6 +191,8 @@ const ResumePage = () => {
               <li>Postgresql*</li>
               <li>MySQL</li>
               <li>MongoDB</li>
+              <li>Auth0</li>
+              <li>OAuth 2.0 Workflow (with PKCE)</li>
             </ul>
             <h3 className="mt-12">Web Standards</h3>
             <ul>
