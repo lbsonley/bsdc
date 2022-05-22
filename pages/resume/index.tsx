@@ -166,6 +166,14 @@ const ResumePage = () => {
               <li>Vue</li>
               <li>Angular</li>
             </ul>
+            <h3 className="mt-12">Backend Libraries/Architectures</h3>
+            <ul>
+              <li>Express.js*</li>
+              <li>Prisma ORM*</li>
+              <li>GraphQL*</li>
+              <li>REST*</li>
+              <li>Serverless Functions (Lambdas)*</li>
+            </ul>
             <h3 className="mt-12">State Management</h3>
             <ul>
               <li>Easy Peasy*</li>
